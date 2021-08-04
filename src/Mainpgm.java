@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Main {
+public class Mainpgm {
     
 
     public void checkPalindrome(){
@@ -83,7 +83,7 @@ public void printFibonacciSeries()
     }
 
     public static void main(String args[]){ 
-        Main obj = new Main();
+        Mainpgm obj = new Mainpgm();
         int choice;
         Scanner scn = new Scanner(System.in);
         do {
