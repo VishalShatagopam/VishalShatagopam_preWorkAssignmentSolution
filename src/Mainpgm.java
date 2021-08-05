@@ -18,7 +18,7 @@ public class Mainpgm {
         System.out.println("number is Palindrome");
         else
         System.out.println("not a Palindrome number");
-        scii.close();
+        System.out.println();
 }
     public void printPattern(){
     Scanner sci = new Scanner(System.in);
@@ -34,7 +34,7 @@ public class Mainpgm {
         }
         System.out.println();
     }
-    sci.close();
+    System.out.println();
 }
 public void printFibonacciSeries()
     {
@@ -42,7 +42,6 @@ public void printFibonacciSeries()
     Scanner sc= new Scanner(System.in);
     System.out.print("Enter the length of the Fibonacci Series: ");
     n = sc.nextInt();
-    sc.close();
     System.out.print(a+" "+b);
     for(int i=2; i<=n; i++)
     {
@@ -51,7 +50,8 @@ public void printFibonacciSeries()
         a = b;
         b = c;
     }
-    
+    System.out.println();
+    System.out.println();
     }
     public void checkPrimeNumber() {
         int number;
@@ -79,7 +79,7 @@ public void printFibonacciSeries()
         else{
             System.out.println("number is not a prime number");
         }
-        sc.close();
+        System.out.println();        
     }
 
     public static void main(String args[]){ 
