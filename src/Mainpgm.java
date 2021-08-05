@@ -5,9 +5,9 @@ public class Mainpgm {
     public void checkPalindrome(){
     
         int num , sum=0, r, temp;
-        Scanner  scii = new Scanner(System.in);
+        Scanner  sc = new Scanner(System.in);
         System.out.print("Enter a number: ");
-        num = scii.nextInt();
+        num = sc.nextInt();
         temp = num;
         while(num>0){
         r = num %10;
@@ -21,10 +21,10 @@ public class Mainpgm {
         System.out.println();
 }
     public void printPattern(){
-    Scanner sci = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
     int i,j, rows;
     System.out.print("Enter any interger value for pattern length: ");
-    rows = sci.nextInt();
+    rows = sc.nextInt();
     for(i=1;i<=rows;i++)
     {
         for(j=rows; j>=i; j--)
@@ -85,12 +85,12 @@ public void printFibonacciSeries()
     public static void main(String args[]){ 
         Mainpgm obj = new Mainpgm();
         int choice;
-        Scanner scn = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         do {
             System.out.println("Enter your choice from below list.\n" + "1. Find palindrome of number.\n"          
             + "2. Print Pattern for a given no.\n" + "3. Check whether the no is a  prime number.\n"           
             + "4. Print Fibonacci series.\n" + "--> Enter 0 to Exit.\n");          
-            choice = scn.nextInt();            
+            choice = sc.nextInt();            
             switch (choice) {
                 case 0:
                 choice = 0;
@@ -119,7 +119,7 @@ public void printFibonacciSeries()
             }while (choice != 0);
 
             System.out.println("Exited Successfully!!!");
-            scn.close();
+            sc.close();
             
 }     
 }
